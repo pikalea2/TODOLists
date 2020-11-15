@@ -1,5 +1,5 @@
 # TODOLists
-An online TODO List web application
+
 An online TODO List web application is developed using the following specifications given below:
 •	IDE: Visual Studio 2019
 •	In Memory Database: SQL Server 2017
