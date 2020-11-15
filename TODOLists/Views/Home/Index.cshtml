@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <h1>ToDoList</h1>
+    <hr />
+    <p><em>Keep a track of your tasks!</em></p>
+
+    @if (Request.IsAuthenticated)
+    {
+
+        <span>Welcome @Html.Encode(User.Identity.Name) </span>
+    }
+    else
+    {
+
+        @Html.ActionLink("Login", "Login", "Account")<br /><br />
+
+        <p style="font-size:15px"><em>Don't have an account yet?</em></p>
+        @Html.ActionLink("Register Here", "Register", "Account")
+    }
+    
+</div>
